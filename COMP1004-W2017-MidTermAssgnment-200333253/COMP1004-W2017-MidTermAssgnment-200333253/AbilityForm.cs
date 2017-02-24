@@ -83,9 +83,20 @@ namespace COMP1004_W2017_MidTermAssgnment_200333253
             return playerInfo;
         }
 
+        // Next button click event handler
         private void _NextButton_Click(object sender, EventArgs e)
         {
+            // create an instance of the RaceForm
+            RaceForm raceForm = new RaceForm();
 
+            // pass the abilities value (current player info)
+            raceForm.SetPlayerInfo(this.getPlayerInfo());
+
+            // show the RaceForm
+            raceForm.Show();
+
+            // hide the AbilityForm
+            this.Hide();
         }
     }
 }

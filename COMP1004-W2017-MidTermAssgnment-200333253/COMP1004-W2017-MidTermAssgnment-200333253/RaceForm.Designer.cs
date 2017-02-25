@@ -43,7 +43,6 @@
             // 
             // CharacterPictureBox
             // 
-            this.CharacterPictureBox.Image = global::COMP1004_W2017_MidTermAssgnment_200333253.Properties.Resources.M_Elf1;
             this.CharacterPictureBox.Location = new System.Drawing.Point(239, 84);
             this.CharacterPictureBox.Margin = new System.Windows.Forms.Padding(4);
             this.CharacterPictureBox.Name = "CharacterPictureBox";

@@ -97,18 +97,22 @@
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Tag = "file";
             this.fileToolStripMenuItem.Text = "&File";
+            this.fileToolStripMenuItem.Click += new System.EventHandler(this._menuStripEventHandler);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(137, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(149, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Tag = "exit";
             this.exitToolStripMenuItem.Text = "E&xit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this._menuStripEventHandler);
             // 
             // editToolStripMenuItem
             // 
@@ -116,7 +120,9 @@
             this.fontStripMenuItem});
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
             this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
+            this.editToolStripMenuItem.Tag = "edit";
             this.editToolStripMenuItem.Text = "&Edit";
+            this.editToolStripMenuItem.Click += new System.EventHandler(this._menuStripEventHandler);
             // 
             // helpToolStripMenuItem
             // 
@@ -125,24 +131,30 @@
             this.toolStripSeparator5});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Tag = "help";
             this.helpToolStripMenuItem.Text = "&Help";
+            this.helpToolStripMenuItem.Click += new System.EventHandler(this._menuStripEventHandler);
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(104, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(149, 6);
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aboutToolStripMenuItem.Tag = "about";
             this.aboutToolStripMenuItem.Text = "&About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this._menuStripEventHandler);
             // 
             // fontStripMenuItem
             // 
             this.fontStripMenuItem.Name = "fontStripMenuItem";
-            this.fontStripMenuItem.Size = new System.Drawing.Size(98, 22);
+            this.fontStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.fontStripMenuItem.Tag = "font";
             this.fontStripMenuItem.Text = "&Font";
+            this.fontStripMenuItem.Click += new System.EventHandler(this._menuStripEventHandler);
             // 
             // CharacterInformationGroupBox
             // 
@@ -317,7 +329,6 @@
             // CHALabel
             // 
             this.CHALabel.AutoSize = true;
-            this.CHALabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.CHALabel.Location = new System.Drawing.Point(22, 277);
             this.CHALabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CHALabel.Name = "CHALabel";
@@ -328,7 +339,6 @@
             // PERLabel
             // 
             this.PERLabel.AutoSize = true;
-            this.PERLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.PERLabel.Location = new System.Drawing.Point(24, 227);
             this.PERLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PERLabel.Name = "PERLabel";
@@ -339,7 +349,6 @@
             // INTLabel
             // 
             this.INTLabel.AutoSize = true;
-            this.INTLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.INTLabel.Location = new System.Drawing.Point(23, 179);
             this.INTLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.INTLabel.Name = "INTLabel";
@@ -350,7 +359,6 @@
             // ENDLabel
             // 
             this.ENDLabel.AutoSize = true;
-            this.ENDLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.ENDLabel.Location = new System.Drawing.Point(23, 131);
             this.ENDLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ENDLabel.Name = "ENDLabel";
@@ -361,7 +369,6 @@
             // DEXLabel
             // 
             this.DEXLabel.AutoSize = true;
-            this.DEXLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.DEXLabel.Location = new System.Drawing.Point(23, 88);
             this.DEXLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.DEXLabel.Name = "DEXLabel";
@@ -372,7 +379,6 @@
             // STRLabel
             // 
             this.STRLabel.AutoSize = true;
-            this.STRLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.STRLabel.Location = new System.Drawing.Point(23, 45);
             this.STRLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.STRLabel.Name = "STRLabel";
@@ -382,7 +388,6 @@
             // 
             // CHATextBox
             // 
-            this.CHATextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.CHATextBox.Location = new System.Drawing.Point(90, 274);
             this.CHATextBox.Margin = new System.Windows.Forms.Padding(4);
             this.CHATextBox.Name = "CHATextBox";
@@ -393,7 +398,6 @@
             // 
             // PERTextBox
             // 
-            this.PERTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.PERTextBox.Location = new System.Drawing.Point(90, 224);
             this.PERTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.PERTextBox.Name = "PERTextBox";
@@ -404,7 +408,6 @@
             // 
             // INTTextBox
             // 
-            this.INTTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.INTTextBox.Location = new System.Drawing.Point(90, 176);
             this.INTTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.INTTextBox.Name = "INTTextBox";
@@ -415,7 +418,6 @@
             // 
             // ENDTextBox
             // 
-            this.ENDTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.ENDTextBox.Location = new System.Drawing.Point(90, 128);
             this.ENDTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.ENDTextBox.Name = "ENDTextBox";
@@ -426,7 +428,6 @@
             // 
             // DEXTextBox
             // 
-            this.DEXTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.DEXTextBox.Location = new System.Drawing.Point(90, 85);
             this.DEXTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.DEXTextBox.Name = "DEXTextBox";
@@ -437,7 +438,6 @@
             // 
             // STRTextBox
             // 
-            this.STRTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.STRTextBox.Location = new System.Drawing.Point(90, 45);
             this.STRTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.STRTextBox.Name = "STRTextBox";
@@ -469,8 +469,10 @@
             this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
             this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.printToolStripMenuItem.Tag = "print";
             this.printToolStripMenuItem.Text = "&Print";
+            this.printToolStripMenuItem.Click += new System.EventHandler(this._menuStripEventHandler);
             // 
             // FinalForm
             // 

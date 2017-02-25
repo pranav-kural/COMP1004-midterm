@@ -52,6 +52,12 @@
     <Compile Include="AbilityForm.Designer.cs">
       <DependentUpon>AbilityForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="CharacterAboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CharacterAboutBox.Designer.cs">
+      <DependentUpon>CharacterAboutBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="FinalForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +80,9 @@
     </Compile>
     <EmbeddedResource Include="AbilityForm.resx">
       <DependentUpon>AbilityForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CharacterAboutBox.resx">
+      <DependentUpon>CharacterAboutBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FinalForm.resx">
       <DependentUpon>FinalForm.cs</DependentUpon>

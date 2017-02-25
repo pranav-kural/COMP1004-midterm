@@ -80,7 +80,7 @@ namespace COMP1004_W2017_MidTermAssgnment_200333253
                             this._playerInfo["CHA"] = ((Int16.Parse(this._playerInfo["CHA"]) - 10) < 3) ? "0" : ((Int16.Parse(this._playerInfo["CHA"]) - 10).ToString()); //decrease CHA ability by 10 points
 
                             // update the message in the RacialBonusTextBox
-                            this.RacialBonusTextBox.Text = "+10 STR, +20 PER, -10 CHA";
+                            this.RacialBonusTextBox.Text = "+20 STR, +20 PER, -10 CHA";
 
                             // update the race in _playerInfo
                             this._playerInfo["race"] = "Dwarf";

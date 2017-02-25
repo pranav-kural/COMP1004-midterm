@@ -7,6 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+/// <summary>
+/// COMP 1004 Midterm Assignment
+/// February 24th, 2017
+/// Author: Pranav Kural
+/// StudentId: 200333253
+/// </summary>
 
 namespace COMP1004_W2017_MidTermAssgnment_200333253
 {

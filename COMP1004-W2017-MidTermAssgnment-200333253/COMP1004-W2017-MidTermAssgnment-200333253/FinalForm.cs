@@ -7,6 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+/// <summary>
+/// COMP 1004 Midterm Assignment
+/// February 24th, 2017
+/// Author: Pranav Kural
+/// StudentId: 200333253
+/// </summary>
 
 namespace COMP1004_W2017_MidTermAssgnment_200333253
 {
@@ -16,10 +22,11 @@ namespace COMP1004_W2017_MidTermAssgnment_200333253
         // store the player information
         private Dictionary<string, string> _playerInfo;
 
+        // FinalForm constructor
         public FinalForm()
         {
             InitializeComponent();
-            this._playerInfo = new Dictionary<string, string>();
+            this._playerInfo = new Dictionary<string, string>(); // instantiate the _playerInfo
         }
 
 
@@ -77,6 +84,7 @@ namespace COMP1004_W2017_MidTermAssgnment_200333253
                     break;
 
                 case "print":
+                    // print a mock print preview message
                     MessageBox.Show("Sending the final form data to be printed.", "Printing Final Form");
                     break;
                     

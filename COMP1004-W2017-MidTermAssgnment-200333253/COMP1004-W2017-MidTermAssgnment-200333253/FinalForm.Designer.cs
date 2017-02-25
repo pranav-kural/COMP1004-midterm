@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FinalForm));
             this.CharacterProfileMenuStrip = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -68,7 +67,9 @@
             this.ENDTextBox = new System.Windows.Forms.TextBox();
             this.DEXTextBox = new System.Windows.Forms.TextBox();
             this.STRTextBox = new System.Windows.Forms.TextBox();
+            this.FinalFormFontDialog = new System.Windows.Forms.FontDialog();
             this.CharacterPictureBox = new System.Windows.Forms.PictureBox();
+            this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.CharacterProfileMenuStrip.SuspendLayout();
             this.CharacterInformationGroupBox.SuspendLayout();
             this.CharacterProfileGroupBox.SuspendLayout();
@@ -98,24 +99,15 @@
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "&File";
             // 
-            // printToolStripMenuItem
-            // 
-            this.printToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printToolStripMenuItem.Image")));
-            this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.printToolStripMenuItem.Name = "printToolStripMenuItem";
-            this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.printToolStripMenuItem.Text = "&Print";
-            // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(137, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
             this.exitToolStripMenuItem.Text = "E&xit";
             // 
             // editToolStripMenuItem
@@ -138,18 +130,18 @@
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(104, 6);
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.aboutToolStripMenuItem.Text = "&About";
             // 
             // fontStripMenuItem
             // 
             this.fontStripMenuItem.Name = "fontStripMenuItem";
-            this.fontStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.fontStripMenuItem.Size = new System.Drawing.Size(98, 22);
             this.fontStripMenuItem.Text = "&Font";
             // 
             // CharacterInformationGroupBox
@@ -454,6 +446,13 @@
             this.STRTextBox.TabIndex = 28;
             this.STRTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // FinalFormFontDialog
+            // 
+            this.FinalFormFontDialog.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.FinalFormFontDialog.MaxSize = 18;
+            this.FinalFormFontDialog.MinSize = 10;
+            this.FinalFormFontDialog.ShowColor = true;
+            // 
             // CharacterPictureBox
             // 
             this.CharacterPictureBox.Location = new System.Drawing.Point(320, 218);
@@ -463,6 +462,15 @@
             this.CharacterPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.CharacterPictureBox.TabIndex = 6;
             this.CharacterPictureBox.TabStop = false;
+            // 
+            // printToolStripMenuItem
+            // 
+            this.printToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printToolStripMenuItem.Image")));
+            this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.printToolStripMenuItem.Name = "printToolStripMenuItem";
+            this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.printToolStripMenuItem.Text = "&Print";
             // 
             // FinalForm
             // 
@@ -534,5 +542,6 @@
         internal System.Windows.Forms.TextBox DEXTextBox;
         internal System.Windows.Forms.TextBox STRTextBox;
         internal System.Windows.Forms.PictureBox CharacterPictureBox;
+        private System.Windows.Forms.FontDialog FinalFormFontDialog;
     }
 }

@@ -83,7 +83,7 @@ namespace COMP1004_W2017_MidTermAssgnment_200333253
                         {
                             this._playerInfo["STR"] = (Int16.Parse(this._playerInfo["STR"]) + 20).ToString(); //increase STR ability by 20 points
                             this._playerInfo["PER"] = (Int16.Parse(this._playerInfo["PER"]) + 20).ToString(); //increase PER ability by 20 points
-                            this._playerInfo["CHA"] = ((Int16.Parse(this._playerInfo["CHA"]) - 10) < 3) ? "0" : ((Int16.Parse(this._playerInfo["CHA"]) - 10).ToString()); //decrease CHA ability by 10 points
+                            this._playerInfo["CHA"] = ((Int16.Parse(this._playerInfo["CHA"]) - 10) < 3) ? "3" : ((Int16.Parse(this._playerInfo["CHA"]) - 10).ToString()); //decrease CHA ability by 10 points
 
                             // update the message in the RacialBonusTextBox
                             this.RacialBonusTextBox.Text = "+20 STR, +20 PER, -10 CHA";
@@ -131,7 +131,7 @@ namespace COMP1004_W2017_MidTermAssgnment_200333253
                         {
                             this._playerInfo["DEX"] = (Int16.Parse(this._playerInfo["DEX"]) + 20).ToString(); //increase DEX ability by 20 points
                             this._playerInfo["INT"] = (Int16.Parse(this._playerInfo["INT"]) + 20).ToString(); //increase INT ability by 20 points
-                            this._playerInfo["STR"] = ((Int16.Parse(this._playerInfo["STR"]) - 10) < 3) ? "0" : ((Int16.Parse(this._playerInfo["STR"]) - 10).ToString()); //decrease STR ability by 10 points
+                            this._playerInfo["STR"] = ((Int16.Parse(this._playerInfo["STR"]) - 10) < 3) ? "3" : ((Int16.Parse(this._playerInfo["STR"]) - 10).ToString()); //decrease STR ability by 10 points
 
                             // update the message in the RacialBonusTextBox
                             this.RacialBonusTextBox.Text = "+20 DEX, +20 INT, -10 STR";

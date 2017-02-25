@@ -61,6 +61,7 @@
             this.NextButton.TabIndex = 4;
             this.NextButton.Text = "Next";
             this.NextButton.UseVisualStyleBackColor = true;
+            this.NextButton.Click += new System.EventHandler(this._NextButtonClickEventHandler);
             // 
             // RacialBonusLabel
             // 
@@ -74,10 +75,10 @@
             // 
             // RacialBonusTextBox
             // 
-            this.RacialBonusTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RacialBonusTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.RacialBonusTextBox.Location = new System.Drawing.Point(242, 400);
             this.RacialBonusTextBox.Name = "RacialBonusTextBox";
-            this.RacialBonusTextBox.Size = new System.Drawing.Size(287, 29);
+            this.RacialBonusTextBox.Size = new System.Drawing.Size(287, 26);
             this.RacialBonusTextBox.TabIndex = 7;
             // 
             // RaceGroupBox
@@ -102,7 +103,6 @@
             this.HumanRadioButton.Name = "HumanRadioButton";
             this.HumanRadioButton.Size = new System.Drawing.Size(84, 24);
             this.HumanRadioButton.TabIndex = 0;
-            this.HumanRadioButton.TabStop = true;
             this.HumanRadioButton.Text = "Human";
             this.HumanRadioButton.UseVisualStyleBackColor = true;
             this.HumanRadioButton.CheckedChanged += new System.EventHandler(this._RaceRadioButtonEventHandler);

@@ -21,14 +21,17 @@ namespace COMP1004_W2017_MidTermAssgnment_200333253
             InitializeComponent();
         }
 
-        // set the player info (receive it from the AbilitiesForm
+        // set the player info (receive it from the AbilitiesForm)
         public void SetPlayerInfo(Dictionary<string, string> info)
         {
+            // get the values and set to the _playerInfo of RaceForm
             foreach (KeyValuePair<string, string> pair in info)
             {
                 this._playerInfo.Add(pair.Key, pair.Value);
             }
-            Console.WriteLine("Player data received");
+
+            // add the property of race to the _playerInfo
+            this._playerInfo.Add("race", "");
         }
 
         // check changed event handler for the radio buttons
@@ -53,9 +56,12 @@ namespace COMP1004_W2017_MidTermAssgnment_200333253
                             this._playerInfo[ability] = (radioButton.Checked) ? (Int16.Parse(this._playerInfo[ability]) + 5).ToString() : (Int16.Parse(this._playerInfo[ability]) + 5).ToString(); //increase all the abilities by 5 points
                         }
 
-                        // update the message in the RacialBonusTextBox
-                        if (true)
+                        // if human button checked == true
+                        if (radioButton.Checked)
                         {
+                            // update the race in _playerInfo
+                            this._playerInfo["race"] = "Human";
+                            // update the message in the RacialBonusTextBox
                             this.RacialBonusTextBox.Text = "Added 5 points to all the abilities";
                         }
                         break;
@@ -75,6 +81,9 @@ namespace COMP1004_W2017_MidTermAssgnment_200333253
 
                             // update the message in the RacialBonusTextBox
                             this.RacialBonusTextBox.Text = "+10 STR, +20 PER, -10 CHA";
+
+                            // update the race in _playerInfo
+                            this._playerInfo["race"] = "Dwarf";
                         }
                         else
                         {
@@ -98,6 +107,9 @@ namespace COMP1004_W2017_MidTermAssgnment_200333253
                         if (radioButton.Checked)
                         {
                             this.RacialBonusTextBox.Text = "+15 DEX and +15 CHA";
+
+                            // update the race in _playerInfo
+                            this._playerInfo["race"] = "Elf";
                         }
                         break;
 
@@ -117,6 +129,9 @@ namespace COMP1004_W2017_MidTermAssgnment_200333253
 
                             // update the message in the RacialBonusTextBox
                             this.RacialBonusTextBox.Text = "+20 DEX, +20 INT, -10 STR";
+
+                            // update the race in _playerInfo
+                            this._playerInfo["race"] = "Halfling";
                         }
                         else
                         {
@@ -131,7 +146,17 @@ namespace COMP1004_W2017_MidTermAssgnment_200333253
         // Next button click event handler
         private void _NextButtonClickEventHandler(object sender, EventArgs args)
         {
+            // create an instance of the JobForm
+            JobForm jobForm = new JobForm();
 
+            // pass the abilities value (current player info)
+            jobForm.SetPlayerInfo(this._playerInfo);
+
+            // show the RaceForm
+            jobForm.Show();
+
+            // hide the AbilityForm
+            this.Hide();
         }
         
     }
